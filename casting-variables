@@ -8,3 +8,12 @@ def sparedyingfirst():
     print("Duration: ")
 
 sparedyingfirst()
+
+#Add an area where the player can say whether they are rested, have certain spells prepared, and/or how powerfully they cast their spell.
+
+#rested? yes/no, spells prepared? yes/no, then show cast w/higher versions
+#rested-yes (show all spells), spells prepared-yes (pull/show specific spells with higher levels if necessary)
+#rested-yes (show all spells), spells prepared-no (pull/show non-prep spells with higher levels)
+
+#rested-no (show spells except ones used up), spells prepared-yes (pull/show specific spells with higherr levels if necessary)
+#rested-no (show spells except ones used up), spells prepared-no (pull/show non-prep spells with higher levels)
