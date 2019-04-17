@@ -15,5 +15,26 @@ sparedyingfirst()
 #rested-yes (show all spells), spells prepared-yes (pull/show specific spells with higher levels if necessary)
 #rested-yes (show all spells), spells prepared-no (pull/show non-prep spells with higher levels)
 
-#rested-no (show spells except ones used up), spells prepared-yes (pull/show specific spells with higherr levels if necessary)
+#rested-no (show spells except ones used up), spells prepared-yes (pull/show specific spells with higher levels if necessary)
 #rested-no (show spells except ones used up), spells prepared-no (pull/show non-prep spells with higher levels)
+
+combat_time = ""
+
+combat_time = input("If it's combat time, type Fight.", )
+
+all_spells = ("here's where all the spells would show up that are available.")
+
+combat_time()
+
+while combat_time == "Fight":
+    rest_time = input("Rested? Type yes or no.", )
+    if rest_time == "Yes":
+        print(all_spells)
+    elif rest_time == "No":
+        input("What ones have you used?", )
+    else:
+        print("Sorry. Try again.")
+        break
+
+
+
