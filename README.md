@@ -13,3 +13,7 @@ Combining the above two I will make a way where, in combat, the player can see w
 
 
 If I had enough time, I would also add the subclasses and specializations as well as racial benefits. 
+
+
+Goals: 4/15 - 4/20 Work on Warlock Spells List and Casting Variables
+4-21 - 4/27 Work on Combat (putting the two together.)
