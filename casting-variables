@@ -18,20 +18,37 @@ sparedyingfirst()
 #rested-no (show spells except ones used up), spells prepared-yes (pull/show specific spells with higher levels if necessary)
 #rested-no (show spells except ones used up), spells prepared-no (pull/show non-prep spells with higher levels)
 
+
 def fight_ing():
     all_spells = ("here's where all the spells would show up that are available.")
+    unused_spells = ("here's where all the unused spells would show up")
     combat_time = 1
+    used_spells = ["your used spells list"]
+    prepped_spells = ["your prepped spells list"]
+    cantrips = ["your cantrips spells list"]
     while combat_time == 1:
         rest_time = input("Rested? Type yes or no.", )
-        if rest_time == "Yes":
-            print(all_spells)
-        elif rest_time == "No":
+        if rest_time.capitalize() == "Yes":
+            prepped1 = input("Do you have spells prepared? Yes or No?", )
+            if prepped1.capitalize() == "Yes":
+                prepped_spells = input("What spells you got?",)
+                print(prepped_spells, all_spells)
+            elif prepped1.capitalize() == "No":
+                print(cantrips)
+
+        elif rest_time.capitalize()== "No":
             input("What ones have you used?", )
+            print(unused_spells)
+            prepped1 = input("Do you have spells prepared? Yes or No?", )
+            if prepped1.capitalize() == "Yes":
+                prepped_spells = input("What spells you got?",)
+                print(prepped_spells, unused_spells)
+            elif prepped1.capitalize() == "No":
+                print(cantrips)
+            
         else:
             print("Sorry. Try again.")
             combat_time = 0
 
+
 fight_ing()
-
-
-
