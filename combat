@@ -1,1 +1,150 @@
 
+
+
+
+
+
+
+
+
+def thaumaturgy():
+    print("Name: Thaumaturgy")
+    print("Description: You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range: \n Your voice booms up to three times as loud as normal for 1 minute. You cause flames to flicker, brighten, dim, or change color for 1 minute. \n You cause harmless tremors in the ground for 1 minute. You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers. \n You instantaneously cause an unlocked door or window to fly open or slam shut. \n You alter the appearance of your eyes for 1 minute.(If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.)")
+    
+    print("\n")
+    
+    print("Level: Cantrip")
+    print("Range: 30 ft.")
+    print("School: Transmutation")
+    print("Classes: Cleric")
+
+    print("Casting Time: 1 action")
+    print("Duration: Up to 1 minute")
+    print("Components: V")
+
+def message():
+    print("Name: Message")
+    print("Description: You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. \n You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn’t have to follow a straight line and can travel freely around corners or through openings. ")
+    
+    print("\n")
+    
+    print("Level: Cantrip")
+    print("Range: 120 ft.")
+    print("School: Transmutation")
+    print("Classes: Bard, Sorcerer, Wizard")
+    print("\n")
+    print("Casting Time: 1 action")
+    print("Duration: 1 round")
+    print("Components: V,S,M (A short piece of copper wire.)")
+
+def prestidigitation():
+    print("Name: Prestidigitation")
+    print("Description: You create one of the following magical effects within range: \n Shower of sparks, puff of wind, faint musical notes, or an odd odor. \n Instantaneously light or snuff out a candle, a torch, or a small campfire. \n Instantly clean or soil an object no larger than 1 cubic foot. \n Chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour. \n Create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn. \n You can have three of these effects active at a time.")
+
+    print("Level: Cantrip")
+    print("Range: 10 ft.")
+    print("School: Transmutation")
+    print("Classes: Bard, Sorcerer, Warlock, Wizard")
+    
+    print("\n")
+
+    print("Casting Time: 1 action")
+    print("Duration: Up to 1 hour")
+    print("Components: V, S")
+
+def spare_the_dying():
+    print("Name: Spare the Dying")
+    print("Description: You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.")
+
+    print("\n")
+
+    print("Level: Cantrip")
+    print("Range: Touch")
+    print("School: Necromancy")
+    print("Classes: Cleric")
+
+    print("\n")
+
+    print("Casting Time: 1 action")
+    print("Components: V,S")
+    
+def faerie_fire():
+    print("Name: Faerie Fire")
+    print("Description: Each object in a 20 foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in this area when the spell is cast is also outlined in light if it fails a Dex saving throw. For the duration, objects and affected creatures shed dim light in a 10 foot radius. \n Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.")
+
+    print("\n")
+
+    print("Level: 1")
+    print("Range: 60 ft.")
+    print("School: Evocation")
+    print("Classes: Bard, Druid")
+    print("Spell save: Dex")
+
+    print("\n")
+
+    print("Casting Time: 1 action")
+    print("Duration: Concentration, up to 1 minute.")
+    print("Components: V")
+    
+def sleep():
+    print("Name: Sleep")
+    print("Description: This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures). Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected. Undead and creatures immune to being charmed aren’t affected by this spell. \n  When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.")
+
+    print("\n")
+
+    print("Level: 1")
+    print("Range: 90 ft.")
+    print("School: Enchantment")
+    print("Classes: Bard, Sorcerer, Wizard")
+    print("Spell save: ")
+
+    print("\n")
+
+    print("Casting Time: ")
+    print("Duration: ")
+    print("Components: ")
+    print("Damage: ")
+    print("Damage (failed save): ")
+
+
+
+def fight_ing():
+    a1 = thaumaturgy()
+    a2 = message()
+    a3 = prestidigitation()
+    a4 = spare_the_dying()
+    a5 = faerie_fire()
+    a6 = sleep()
+
+    all_spells = [a1,a2,a3,a4,a5,a6]
+    unused_spells = ("here's where all the unused spells would show up")
+    combat_time = 1
+    used_spells = ["your used spells list"]
+    prepped_spells = ["your prepped spells list"]
+    cantrips = [thaumaturgy(),message(),prestidigitation(),spare_the_dying()]
+    while combat_time == 1:
+        rest_time = input("Rested? Type yes or no.", )
+        if rest_time.capitalize() == "Yes":
+            prepped1 = input("Do you have spells prepared? Yes or No?", )
+            if prepped1.capitalize() == "Yes":
+                prepped_spells = input("What spells you got?",)
+                print(prepped_spells, all_spells)
+            elif prepped1.capitalize() == "No":
+                print(cantrips)
+
+        elif rest_time.capitalize()== "No":
+            input("What ones have you used?", )
+            print(used_spells)
+            prepped1 = input("Do you have spells prepared? Yes or No?", )
+            if prepped1.capitalize() == "Yes":
+                prepped_spells = input("What spells you got?",)
+                print(prepped_spells, unused_spells)
+            elif prepped1.capitalize() == "No":
+                print(cantrips)
+            
+        else:
+            print("Sorry. Try again.")
+            combat_time = 0
+
+
+fight_ing()
