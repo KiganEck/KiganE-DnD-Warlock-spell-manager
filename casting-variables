@@ -19,15 +19,12 @@ sparedyingfirst()
 #rested-no (show spells except ones used up), spells prepared-no (pull/show non-prep spells with higher levels)
 
 
-def fight_ing():
-
-
-    all_spells = (thaumaturgy,message,prestidigitation,spare_the_dying,faerie_fire,sleep)
+ #all_spells = (thaumaturgy,message,prestidigitation,spare_the_dying,faerie_fire,sleep)
     unused_spells = ("here's where all the unused spells would show up")
     combat_time = 1
     used_spells = ""
     prepped_spells = ["your prepped spells list"]
-    cantrips = (thaumaturgy,message,prestidigitation,spare_the_dying)
+    #cantrips = (thaumaturgy,message,prestidigitation,spare_the_dying)
     while combat_time == 1:
         rest_time = input("Rested? Type yes or no.", )
         if rest_time.capitalize() == "Yes":
@@ -38,10 +35,10 @@ def fight_ing():
                     faerie_fire()
                 if "sleep" in prepped_spells:
                     sleep()
-                thaumaturgy()
-                message()
-                prestidigitation()
-                spare_the_dying()
+                    thaumaturgy()
+                    message()
+                    prestidigitation()
+                    spare_the_dying()
                 
                 
             elif prepped1.capitalize() == "No":

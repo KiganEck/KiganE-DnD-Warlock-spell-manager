@@ -107,10 +107,10 @@ def fight_ing():
                     faerie_fire()
                 if "sleep" in prepped_spells:
                     sleep()
-                thaumaturgy()
-                message()
-                prestidigitation()
-                spare_the_dying()
+                    thaumaturgy()
+                    message()
+                    prestidigitation()
+                    spare_the_dying()
                 
                 
             elif prepped1.capitalize() == "No":
