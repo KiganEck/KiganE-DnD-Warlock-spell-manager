@@ -127,21 +127,36 @@ def fight_ing():
                 if "faerie fire" in prepped_spells:
                     if "sleep" in prepped_spells:
                             used_spells = input("What prepped spells have you used?", )
-                            if "faerie_fire" in used_spells:
-                                if "sleep" in used_spells:
-                                    thaumaturgy()
-                                    message()
-                                    prestidigitation()
-                                    spare_the_dying()
-                                else:
-                                    sleep()
-                                    thaumaturgy()
-                                    message()
-                                    prestidigitation()
-                                    spare_the_dying
+                            if "sleep" in used_spells:
+                                thaumaturgy()
+                                message()
+                                prestidigitation()
+                                spare_the_dying()
+
+                            elif "none" in used_spells:
+                                sleep()
+                                thaumaturgy()
+                                message()
+                                prestidigitation()
+                                spare_the_dying()
+                                    
+                            elif "none" in used_spells:
+                                faerie_fire()
+                                sleep()
+                                thaumaturgy()
+                                message()
+                                prestidigitation()
+                                spare_the_dying
                     else:
-                        used_spells = input("What prepped spells have you used?", )
-                        if "faerie_fire" in used_spells:
+                        used_spells = input("What prepped spells have you used?")
+                        if "none" in used_spells:
+                            faerie_fire()
+                            thaumaturgy()
+                            message()
+                            prestidigitation()
+                            spare_the_dying()
+
+                        else:
                             thaumaturgy()
                             message()
                             prestidigitation()
